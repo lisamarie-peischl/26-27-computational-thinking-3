@@ -1,0 +1,1 @@
+Verändere die Berechnung von der const radius so, dass die dadurch entstehenden Kreise nichtmehr so groß werden, dass sie die daneben stehenden Ortsnamen überdecken. Wichtig ist, dass die Größen der Kreise immer noch korrekt die Einwohnerzahl der Städte visualisieren. Die Verhältnisse müssen also stimmen.

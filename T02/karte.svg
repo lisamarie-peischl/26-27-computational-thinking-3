@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360">
+  <rect width="720" height="360" fill="#f4f1ea" stroke="#222"/>
+  <circle cx="379.58" cy="82.4" r="0.7791020472312982" fill="#c0392b"/>
+  <text x="383.35910204723126" y="86.4" font-family="sans-serif" font-size="11">Gmünd</text>
+  <circle cx="211.98" cy="98.58" r="9.156933360652385" fill="#c0392b"/>
+  <text x="224.13693336065236" y="102.58" font-family="sans-serif" font-size="11">New York</text>
+  <circle cx="381.5" cy="60.18000000000001" r="2.634413280662951" fill="#c0392b"/>
+  <text x="387.13441328066295" y="64.18" font-family="sans-serif" font-size="11">Oslo</text>
+  <circle cx="384.96" cy="96.22" r="5.113066361690177" fill="#c0392b"/>
+  <text x="393.07306636169017" y="100.22" font-family="sans-serif" font-size="11">Rom</text>
+  <circle cx="273.6" cy="225.81999999999996" r="8.006383762497332" fill="#c0392b"/>
+  <text x="284.60638376249733" y="229.81999999999996" font-family="sans-serif" font-size="11">Rio de Janeiro</text>
+  <circle cx="662.4200000000001" cy="247.74" r="7.204823780932169" fill="#c0392b"/>
+  <text x="672.6248237809323" y="251.74" font-family="sans-serif" font-size="11">Sydney</text>
+  <circle cx="639.52" cy="108.63999999999999" r="9.582097394422084" fill="#c0392b"/>
+  <text x="652.1020973944221" y="112.63999999999999" font-family="sans-serif" font-size="11">Tokio</text>
+  <circle cx="396.84000000000003" cy="247.86" r="6.742082481731901" fill="#c0392b"/>
+  <text x="406.58208248173196" y="251.86" font-family="sans-serif" font-size="11">Kapstadt</text>
+  <circle cx="422.48" cy="119.92000000000002" r="10" fill="#c0392b"/>
+  <text x="435.48" y="123.92000000000002" font-family="sans-serif" font-size="11">Kairo</text>
+  <circle cx="123.52000000000001" cy="111.9" r="6.065631518175639" fill="#c0392b"/>
+  <text x="132.58563151817566" y="115.9" font-family="sans-serif" font-size="11">Los Angeles</text>
+</svg>

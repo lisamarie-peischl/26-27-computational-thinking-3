@@ -1,0 +1,1 @@
+Das Programm wird im Browser über die index.html mithilfe des Live Servers geöffnet.

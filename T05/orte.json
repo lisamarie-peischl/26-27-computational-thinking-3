@@ -1,8 +1,12 @@
 [
-  { "id": "nullinsel", "name": "Nullinsel", "lat": 0, "lon": 0, "farbe": "#999999" },
-  { "id": "gmuend", "name": "Schwäbisch Gmünd", "lat": 48.8, "lon": 9.79, "farbe": "#c0392b" },
-  { "id": "stuttgart", "name": "Stuttgart", "lat": 48.7758, "lon": 9.1829, "farbe": "#c0392b" },
-  { "id": "kapstadt", "name": "Kapstadt", "lat": -33.92, "lon": 18.42, "farbe": "#2980b9" },
-  { "id": "longyearbyen", "name": "Longyearbyen", "lat": 78.22, "lon": 15.63, "farbe": "#16a085" },
-  { "id": "nyc", "name": "New York", "lat": 40.69, "lon": -74.14, "farbe": "#8e44ad" }
+  { "name": "Gmünd", "lat": 48.8, "lon": 9.79, "population": 63735 },
+  { "name": "New York", "lat": 40.71, "lon": -74.01, "population": 8804190 },
+  { "name": "Oslo", "lat": 59.91, "lon": 10.75, "population": 728714 },
+  { "name": "Rom", "lat": 41.89, "lon": 12.48, "population": 2745062 },
+  { "name": "Rio de Janeiro", "lat": -22.91, "lon": -43.20, "population": 6730729 },
+  { "name": "Sydney", "lat": -33.87, "lon": 151.21, "population": 5450496 },
+  { "name": "Tokio", "lat": 35.68, "lon": 139.76, "population": 9640742 },
+  { "name": "Kapstadt", "lat": -33.93, "lon": 18.42, "population": 4772846 },
+  { "name": "Kairo", "lat": 30.04, "lon": 31.24, "population": 10500000},
+  { "name": "Los Angeles", "lat": 34.05, "lon": -118.24, "population": 3863148}
 ]

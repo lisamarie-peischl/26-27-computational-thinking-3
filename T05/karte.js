@@ -1,5 +1,6 @@
 import { orteImUmkreis, nachEntfernung } from "./entfernung.js";
 import { lonZuX, latZuY, zoomeAusschnitt } from "./projektion.js";
+import { berechneRadius } from "./population.js";
 
 const AUSSCHNITT = { west: -180, ost: 180, nord: 90, sued: -90 };
 const ZOOMPUNKT = { lat: 48.8, lon: 9.79 }; // Schwäbisch Gmünd
@@ -7,8 +8,11 @@ const ZOOMPUNKT = { lat: 48.8, lon: 9.79 }; // Schwäbisch Gmünd
 const response = await fetch("orte.json");
 const orte = await response.json();
 
+const maxPopulation = Math.max(...orte.map((o) => o.population));
+
 const sliderBreite = document.querySelector("#breite");
 const sliderZoom = document.querySelector("#zoom");
+
 const karte = document.querySelector("#karte");
 const sliderRadius = document.querySelector("#radius");
 const radiusAnzeige = document.querySelector("#radiusAnzeige");
@@ -27,11 +31,15 @@ function zeichnen() {
   <rect width="${breite}" height="${hoehe}" fill="#f4f1ea" stroke="#222"/>`;
 
   for (const ort of nah) {
-    const x = lonZuX(ort.lon, breite, ausschnitt);
-    const y = latZuY(ort.lat, hoehe, ausschnitt);
-    svg += `
-  <circle cx="${x}" cy="${y}" r="4" fill="${ort.farbe}"/>
-  <text x="${x + 8}" y="${y + 4}" font-family="sans-serif" font-size="11">${ort.name}</text>`;
+  const x = lonZuX(ort.lon, breite, ausschnitt);
+  const y = latZuY(ort.lat, hoehe, ausschnitt);
+
+  const radius = berechneRadius(ort.population, maxPopulation);
+
+  svg += `
+  <circle cx="${x}" cy="${y}" r="${radius}" fill="#188a89"/>
+  <text x="${x + radius + 3}" y="${y + 4}" font-family="sans-serif" font-size="11">${ort.name}</text>`;
+
   }
 
   svg += `

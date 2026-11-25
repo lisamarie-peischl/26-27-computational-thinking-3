@@ -15,10 +15,8 @@ export function entfernung(a, b) {
   return 2 * ERDRADIUS_KM * Math.asin(Math.sqrt(h));
 }
 
-export function orteImUmkreis(orte, zentrum, radiusKm) {
-  return orte.filter(
-    (ort) => entfernung(zentrum, ort) <= radiusKm
-  );
+export function orteImUmkreis(orte, zentrum, radiusKM) {
+  return orte.filter((ort) => entfernung(zentrum, ort) <= radiusKM);
 }
 
 export function nachEntfernung(orte, zentrum) {
@@ -26,3 +24,4 @@ export function nachEntfernung(orte, zentrum) {
     .map((ort) => ({ ...ort, km: entfernung(zentrum, ort) }))
     .sort((a, b) => a.km - b.km);
 }
+

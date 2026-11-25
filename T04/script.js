@@ -1,4 +1,3 @@
-
 const BREITE_SVG = 720;
 const HOEHE_SVG = 360;
 
